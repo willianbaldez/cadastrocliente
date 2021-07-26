@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "97aacf69-9b80-455e-ad37-6f1beb6f6492",
+		"name": "Builders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/clientes?datainicio=2021-01-01&dataFim2021-07-01",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "18.229.157.11:8080/clientes?nascimento=1989-03-26&nome=Willian Baldez&telefone=981715951&cpf=942793330204",
+					"host": [
+						"18",
+						"229",
+						"157",
+						"11"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					],
+					"query": [
+						{
+							"key": "nascimento",
+							"value": "1989-03-26"
+						},
+						{
+							"key": "nome",
+							"value": "Willian Baldez"
+						},
+						{
+							"key": "telefone",
+							"value": "981715951"
+						},
+						{
+							"key": "cpf",
+							"value": "942793330204"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"fulano de tal 3\",\n    \"nascimento\": \"1989-03-27\",\n    \"cpf\": \"39874563255\",\n    \"telefone\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "18.229.157.11:8080/clientes/",
+					"host": [
+						"18",
+						"229",
+						"157",
+						"11"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18.229.157.11:8080/clientes/123",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "18.229.157.11:8080/clientes/123",
+					"host": [
+						"18",
+						"229",
+						"157",
+						"11"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18.229.157.11:8080/clientes/123",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "18.229.157.11:8080/clientes/123",
+					"host": [
+						"18",
+						"229",
+						"157",
+						"11"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
